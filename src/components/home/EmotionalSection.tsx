@@ -16,8 +16,8 @@ export default function EmotionalSection({ navigate }: NavigationProps) {
           <div className="relative">
             <div className="rounded-3xl overflow-hidden">
               <img
-                src="https://images.pexels.com/photos/3881193/pexels-photo-3881193.jpeg?auto=compress&cs=tinysrgb&w=700"
-                alt="Dentista hablando con paciente"
+                src="https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&w=700"
+                alt="Adolescente sonriendo con confianza"
                 className="w-full h-[480px] object-cover"
               />
             </div>

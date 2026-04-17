@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { MapPin, Phone, Mail, Clock, MessageCircle, CheckCircle2, ArrowRight, Send } from 'lucide-react';
 
 const services = [
@@ -38,6 +38,13 @@ export default function Contacto() {
   });
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://assets.calendly.com/assets/external/widget.js';
+    script.async = true;
+    document.body.appendChild(script);
+  }, []);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -325,6 +332,20 @@ export default function Contacto() {
                 />
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="py-20 bg-slate-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="font-display text-3xl font-bold text-slate-900 mb-2">
+              O agenda directamente aquí
+            </h2>
+            <p className="text-slate-500">Selecciona el horario que mejor te va y confirma tu cita al instante</p>
+          </div>
+          <div className="flex justify-center">
+            <div className="calendly-inline-widget" data-url="https://calendly.com/manuelquintanillatigo2015/15min?hide_event_type_details=1&hide_gdpr_banner=1" style={{ minWidth: '320px', height: '700px', maxWidth: '100%' }} />
           </div>
         </div>
       </div>
