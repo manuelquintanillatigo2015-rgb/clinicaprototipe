@@ -35,7 +35,7 @@ export default function EmotionalSection({ navigate }: NavigationProps) {
           </div>
 
           <div>
-            <p className="text-cyan-600 text-sm font-semibold tracking-widest uppercase mb-4">
+            <p className="text-blue-600 text-sm font-semibold tracking-widest uppercase mb-4">
               Entendemos cómo te sientes
             </p>
             <h2 className="font-display text-4xl lg:text-5xl font-bold text-slate-900 leading-tight mb-6">
@@ -52,7 +52,7 @@ export default function EmotionalSection({ navigate }: NavigationProps) {
             <ul className="space-y-3 mb-10">
               {reassurances.map((item) => (
                 <li key={item} className="flex items-start gap-3">
-                  <CheckCircle2 size={18} className="text-cyan-500 mt-0.5 flex-shrink-0" />
+                  <CheckCircle2 size={18} className="text-blue-500 mt-0.5 flex-shrink-0" />
                   <span className="text-slate-700 text-sm">{item}</span>
                 </li>
               ))}

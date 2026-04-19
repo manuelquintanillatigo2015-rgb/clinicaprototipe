@@ -34,10 +34,10 @@ export default function TrustStrip() {
           {items.map((item) => (
             <div
               key={item.title}
-              className="flex items-start gap-4 p-5 rounded-2xl border border-slate-100 hover:border-cyan-200 hover:bg-cyan-50/50 transition-all group"
+              className="flex items-start gap-4 p-5 rounded-2xl border border-slate-100 hover:border-blue-200 hover:bg-blue-50/50 transition-all group"
             >
-              <div className="w-11 h-11 bg-cyan-50 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-cyan-100 transition-colors">
-                <item.icon size={22} className="text-cyan-600" />
+              <div className="w-11 h-11 bg-blue-50 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-blue-100 transition-colors">
+                <item.icon size={22} className="text-blue-600" />
               </div>
               <div>
                 <h3 className="text-slate-800 font-display font-semibold text-sm mb-1">{item.title}</h3>

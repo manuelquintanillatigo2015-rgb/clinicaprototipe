@@ -28,7 +28,7 @@
   }
 
   .text-gradient-blue {
-    background: linear-gradient(135deg, #38bdf8, #06b6d4);
+    background: linear-gradient(135deg, #3b82f6, #0ea5e9);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -42,11 +42,11 @@
   }
 
   .bg-hero-gradient {
-    background: linear-gradient(135deg, #020818 0%, #0a1628 40%, #0d2149 100%);
+    background: linear-gradient(135deg, #001a33 0%, #0d2847 40%, #1a3a52 100%);
   }
 
   .bg-dark-gradient {
-    background: linear-gradient(180deg, #020818 0%, #0a1628 100%);
+    background: linear-gradient(180deg, #001a33 0%, #0d2847 100%);
   }
 
   .card-glass {
@@ -63,14 +63,14 @@
   }
 
   .btn-primary {
-    background: linear-gradient(135deg, #0891b2, #06b6d4);
+    background: linear-gradient(135deg, #3b82f6, #0ea5e9);
     transition: all 0.3s ease;
   }
 
   .btn-primary:hover {
-    background: linear-gradient(135deg, #0e7490, #0891b2);
+    background: linear-gradient(135deg, #2563eb, #0284c7);
     transform: translateY(-2px);
-    box-shadow: 0 8px 32px rgba(6, 182, 212, 0.35);
+    box-shadow: 0 8px 32px rgba(59, 130, 246, 0.35);
   }
 
   .btn-outline-white {
@@ -85,7 +85,7 @@
 
   .section-divider {
     height: 1px;
-    background: linear-gradient(90deg, transparent, rgba(6, 182, 212, 0.3), transparent);
+    background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.3), transparent);
   }
 
   .animate-fade-up {
@@ -93,7 +93,7 @@
   }
 
   .glow-cyan {
-    box-shadow: 0 0 30px rgba(6, 182, 212, 0.2);
+    box-shadow: 0 0 30px rgba(59, 130, 246, 0.2);
   }
 
   .hover-lift {

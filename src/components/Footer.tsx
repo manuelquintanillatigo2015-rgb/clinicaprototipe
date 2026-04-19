@@ -17,7 +17,7 @@ export default function Footer({ navigate }: NavigationProps) {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           <div className="lg:col-span-1">
             <button onClick={() => navigate('home')} className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-cyan-400 to-blue-600 flex items-center justify-center">
+              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-300 to-blue-600 flex items-center justify-center">
                 <span className="text-white font-bold text-sm font-display">L</span>
               </div>
               <span className="text-white font-display font-semibold text-lg tracking-tight">
@@ -28,10 +28,10 @@ export default function Footer({ navigate }: NavigationProps) {
               Diagnóstico claro, tecnología moderna y un trato que elimina el miedo desde el primer momento.
             </p>
             <div className="flex gap-3">
-              <a href="#" className="w-9 h-9 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 hover:text-white hover:border-cyan-400/50 transition-all">
+              <a href="#" className="w-9 h-9 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 hover:text-white hover:border-blue-400/50 transition-all">
                 <Instagram size={16} />
               </a>
-              <a href="#" className="w-9 h-9 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 hover:text-white hover:border-cyan-400/50 transition-all">
+              <a href="#" className="w-9 h-9 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 hover:text-white hover:border-blue-400/50 transition-all">
                 <Facebook size={16} />
               </a>
               <a
@@ -52,7 +52,7 @@ export default function Footer({ navigate }: NavigationProps) {
                 <li key={link.page}>
                   <button
                     onClick={() => navigate(link.page)}
-                    className="text-slate-400 hover:text-cyan-400 text-sm transition-colors"
+                    className="text-slate-400 hover:text-blue-400 text-sm transition-colors"
                   >
                     {link.label}
                   </button>
@@ -66,7 +66,7 @@ export default function Footer({ navigate }: NavigationProps) {
             <ul className="space-y-3 text-sm text-slate-400">
               {['Limpieza y Prevención', 'Ortodoncia', 'Estética Dental', 'Implantes Dentales', 'Restauraciones', 'Urgencias'].map(s => (
                 <li key={s}>
-                  <button onClick={() => navigate('servicios')} className="hover:text-cyan-400 transition-colors">
+                  <button onClick={() => navigate('servicios')} className="hover:text-blue-400 transition-colors">
                     {s}
                   </button>
                 </li>
@@ -78,19 +78,19 @@ export default function Footer({ navigate }: NavigationProps) {
             <h4 className="text-white font-display font-semibold mb-5">Contacto</h4>
             <ul className="space-y-4">
               <li className="flex items-start gap-3 text-sm text-slate-400">
-                <MapPin size={15} className="text-cyan-400 mt-0.5 flex-shrink-0" />
+                <MapPin size={15} className="text-blue-400 mt-0.5 flex-shrink-0" />
                 <span>Av. Principal 123, Col. Centro<br />Ciudad de México, CDMX</span>
               </li>
               <li className="flex items-center gap-3 text-sm text-slate-400">
-                <Phone size={15} className="text-cyan-400 flex-shrink-0" />
+                <Phone size={15} className="text-blue-400 flex-shrink-0" />
                 <a href="tel:+1234567890" className="hover:text-white transition-colors">(123) 456-7890</a>
               </li>
               <li className="flex items-center gap-3 text-sm text-slate-400">
-                <Mail size={15} className="text-cyan-400 flex-shrink-0" />
+                <Mail size={15} className="text-blue-400 flex-shrink-0" />
                 <a href="mailto:hola@luminadental.mx" className="hover:text-white transition-colors">hola@luminadental.mx</a>
               </li>
               <li className="flex items-start gap-3 text-sm text-slate-400">
-                <Clock size={15} className="text-cyan-400 mt-0.5 flex-shrink-0" />
+                <Clock size={15} className="text-blue-400 mt-0.5 flex-shrink-0" />
                 <div>
                   <p>Lun – Vie: 9:00 – 19:00</p>
                   <p>Sáb: 9:00 – 14:00</p>

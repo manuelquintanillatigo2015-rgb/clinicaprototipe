@@ -6,9 +6,9 @@ const services = [
     icon: Shield,
     name: 'Limpieza y prevención',
     desc: 'Mantén tus dientes sanos y elimina el sarro acumulado antes de que cause problemas.',
-    color: 'from-cyan-500/10 to-blue-600/10',
-    accent: 'text-cyan-500',
-    border: 'border-cyan-200 hover:border-cyan-400',
+    color: 'from-blue-500/10 to-blue-600/10',
+    accent: 'text-blue-500',
+    border: 'border-blue-200 hover:border-blue-400',
   },
   {
     icon: AlignCenter,
@@ -57,7 +57,7 @@ export default function ServicesPreview({ navigate }: NavigationProps) {
     <section className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <p className="text-cyan-600 text-sm font-semibold tracking-widest uppercase mb-4">
+          <p className="text-blue-600 text-sm font-semibold tracking-widest uppercase mb-4">
             Lo que podemos hacer por ti
           </p>
           <h2 className="font-display text-4xl lg:text-5xl font-bold text-slate-900 mb-5">
@@ -93,7 +93,7 @@ export default function ServicesPreview({ navigate }: NavigationProps) {
         <div className="text-center">
           <button
             onClick={() => navigate('servicios')}
-            className="inline-flex items-center gap-2 border-2 border-cyan-500 text-cyan-600 hover:bg-cyan-500 hover:text-white font-semibold px-8 py-4 rounded-2xl transition-all"
+            className="inline-flex items-center gap-2 border-2 border-blue-500 text-blue-600 hover:bg-blue-500 hover:text-white font-semibold px-8 py-4 rounded-2xl transition-all"
           >
             Ver todos los tratamientos
             <ArrowRight size={18} />

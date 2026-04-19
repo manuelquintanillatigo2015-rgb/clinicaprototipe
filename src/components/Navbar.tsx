@@ -40,7 +40,7 @@ export default function Navbar({ navigate, currentPage }: NavigationProps) {
             onClick={() => handleNav('home')}
             className="flex items-center gap-2 group"
           >
-            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-cyan-400 to-blue-600 flex items-center justify-center">
+            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-300 to-blue-600 flex items-center justify-center">
               <span className="text-white font-bold text-sm font-display">L</span>
             </div>
             <span className="text-white font-display font-semibold text-lg tracking-tight">
@@ -55,7 +55,7 @@ export default function Navbar({ navigate, currentPage }: NavigationProps) {
                 onClick={() => handleNav(link.page)}
                 className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
                   currentPage === link.page
-                    ? 'text-cyan-400 bg-cyan-400/10'
+                    ? 'text-blue-400 bg-blue-400/10'
                     : 'text-slate-300 hover:text-white hover:bg-white/8'
                 }`}
               >
@@ -97,7 +97,7 @@ export default function Navbar({ navigate, currentPage }: NavigationProps) {
                   onClick={() => handleNav(link.page)}
                   className={`text-left px-4 py-3 rounded-lg text-sm font-medium transition-all ${
                     currentPage === link.page
-                      ? 'text-cyan-400 bg-cyan-400/10'
+                      ? 'text-blue-400 bg-blue-400/10'
                       : 'text-slate-300 hover:text-white hover:bg-white/8'
                   }`}
                 >

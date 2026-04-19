@@ -5,13 +5,13 @@ export default function HeroSection({ navigate }: NavigationProps) {
   return (
     <section className="relative min-h-screen bg-hero-gradient flex items-center overflow-hidden">
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-cyan-500/5 rounded-full blur-3xl animate-pulse-slow" />
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl animate-pulse-slow" />
         <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-blue-600/8 rounded-full blur-3xl animate-pulse-slow delay-300" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-cyan-400/3 rounded-full blur-3xl" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-blue-400/3 rounded-full blur-3xl" />
         <div
           className="absolute inset-0 opacity-20"
           style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2306b6d4' fill-opacity='0.08'%3E%3Ccircle cx='1' cy='1' r='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%233b82f6' fill-opacity='0.08'%3E%3Ccircle cx='1' cy='1' r='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
           }}
         />
       </div>
@@ -19,9 +19,9 @@ export default function HeroSection({ navigate }: NavigationProps) {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
-            <div className="inline-flex items-center gap-2 bg-cyan-400/10 border border-cyan-400/20 rounded-full px-4 py-2 mb-8">
-              <div className="w-2 h-2 bg-cyan-400 rounded-full animate-pulse" />
-              <span className="text-cyan-400 text-sm font-medium">Atención sin listas de espera</span>
+            <div className="inline-flex items-center gap-2 bg-blue-400/10 border border-blue-400/20 rounded-full px-4 py-2 mb-8">
+              <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse" />
+              <span className="text-blue-400 text-sm font-medium">Atención sin listas de espera</span>
             </div>
 
             <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-[1.05] tracking-tight mb-6">
@@ -93,8 +93,8 @@ export default function HeroSection({ navigate }: NavigationProps) {
 
             <div className="absolute -left-8 top-16 card-glass rounded-2xl p-5 animate-float">
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-cyan-400/20 rounded-xl flex items-center justify-center">
-                  <Shield size={20} className="text-cyan-400" />
+                <div className="w-10 h-10 bg-blue-400/20 rounded-xl flex items-center justify-center">
+                  <Shield size={20} className="text-blue-400" />
                 </div>
                 <div>
                   <p className="text-white text-sm font-semibold">Procedimiento seguro</p>
@@ -119,7 +119,7 @@ export default function HeroSection({ navigate }: NavigationProps) {
               <div className="flex items-center justify-between">
                 <div>
                   <p className="text-white text-sm font-semibold">Próxima disponibilidad</p>
-                  <p className="text-cyan-400 text-xs">Hoy mismo — sin espera</p>
+                  <p className="text-blue-400 text-xs">Hoy mismo — sin espera</p>
                 </div>
                 <button
                   onClick={() => navigate('contacto')}
