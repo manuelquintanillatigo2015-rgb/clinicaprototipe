@@ -28,10 +28,10 @@ export default function Navbar({ navigate, currentPage }: NavigationProps) {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 nav-blur ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'bg-slate-950/95 border-b border-white/8 py-3'
-          : 'bg-transparent py-5'
+          ? 'bg-white border-b border-gray-200 py-3 shadow-sm'
+          : 'bg-white/95 py-4'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -40,11 +40,11 @@ export default function Navbar({ navigate, currentPage }: NavigationProps) {
             onClick={() => handleNav('home')}
             className="flex items-center gap-2 group"
           >
-            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-300 to-blue-600 flex items-center justify-center">
+            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#2A6F97] to-[#1e4d6b] flex items-center justify-center">
               <span className="text-white font-bold text-sm font-display">L</span>
             </div>
-            <span className="text-white font-display font-semibold text-lg tracking-tight">
-              Lumina <span className="text-gradient-blue">Dental</span>
+            <span className="text-gray-900 font-display font-semibold text-lg tracking-tight">
+              Lumina <span className="text-[#2A6F97]">Dental</span>
             </span>
           </button>
 
@@ -55,8 +55,8 @@ export default function Navbar({ navigate, currentPage }: NavigationProps) {
                 onClick={() => handleNav(link.page)}
                 className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
                   currentPage === link.page
-                    ? 'text-blue-400 bg-blue-400/10'
-                    : 'text-slate-300 hover:text-white hover:bg-white/8'
+                    ? 'text-[#2A6F97] bg-[#2A6F97]/5'
+                    : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'
                 }`}
               >
                 {link.label}
@@ -67,7 +67,7 @@ export default function Navbar({ navigate, currentPage }: NavigationProps) {
           <div className="hidden lg:flex items-center gap-3">
             <a
               href="tel:+1234567890"
-              className="flex items-center gap-2 text-slate-300 hover:text-white transition-colors text-sm"
+              className="flex items-center gap-2 text-gray-600 hover:text-[#2A6F97] transition-colors text-sm"
             >
               <Phone size={14} />
               <span>(123) 456-7890</span>
@@ -97,8 +97,8 @@ export default function Navbar({ navigate, currentPage }: NavigationProps) {
                   onClick={() => handleNav(link.page)}
                   className={`text-left px-4 py-3 rounded-lg text-sm font-medium transition-all ${
                     currentPage === link.page
-                      ? 'text-blue-400 bg-blue-400/10'
-                      : 'text-slate-300 hover:text-white hover:bg-white/8'
+                      ? 'text-[#2A6F97] bg-[#2A6F97]/5'
+                      : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'
                   }`}
                 >
                   {link.label}

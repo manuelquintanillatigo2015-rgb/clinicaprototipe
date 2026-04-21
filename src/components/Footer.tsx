@@ -12,33 +12,33 @@ const footerLinks: { label: string; page: Page }[] = [
 
 export default function Footer({ navigate }: NavigationProps) {
   return (
-    <footer className="bg-slate-950 border-t border-white/8">
+    <footer className="bg-gray-50 border-t border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           <div className="lg:col-span-1">
             <button onClick={() => navigate('home')} className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-300 to-blue-600 flex items-center justify-center">
+              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#2A6F97] to-[#1e4d6b] flex items-center justify-center">
                 <span className="text-white font-bold text-sm font-display">L</span>
               </div>
-              <span className="text-white font-display font-semibold text-lg tracking-tight">
-                Lumina <span className="text-gradient-blue">Dental</span>
+              <span className="text-gray-900 font-display font-semibold text-lg tracking-tight">
+                Lumina <span className="text-[#2A6F97]">Dental</span>
               </span>
             </button>
-            <p className="text-slate-400 text-sm leading-relaxed mb-6">
-              Diagnóstico claro, tecnología moderna y un trato que elimina el miedo desde el primer momento.
+            <p className="text-gray-600 text-sm leading-relaxed mb-6">
+              Diagnóstico claro, tecnología moderna y un trato que te hace sentir tranquilo desde el primer momento.
             </p>
             <div className="flex gap-3">
-              <a href="#" className="w-9 h-9 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 hover:text-white hover:border-blue-400/50 transition-all">
+              <a href="#" className="w-9 h-9 rounded-lg bg-gray-200 border border-gray-300 flex items-center justify-center text-gray-600 hover:text-[#2A6F97] hover:border-[#2A6F97] transition-all">
                 <Instagram size={16} />
               </a>
-              <a href="#" className="w-9 h-9 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 hover:text-white hover:border-blue-400/50 transition-all">
+              <a href="#" className="w-9 h-9 rounded-lg bg-gray-200 border border-gray-300 flex items-center justify-center text-gray-600 hover:text-[#2A6F97] hover:border-[#2A6F97] transition-all">
                 <Facebook size={16} />
               </a>
               <a
                 href="https://wa.me/1234567890"
                 target="_blank"
                 rel="noreferrer"
-                className="w-9 h-9 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 hover:bg-emerald-500/20 transition-all"
+                className="w-9 h-9 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-500 hover:bg-emerald-500/20 transition-all"
               >
                 <MessageCircle size={16} />
               </a>
