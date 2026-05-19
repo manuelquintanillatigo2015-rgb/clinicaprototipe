@@ -6,49 +6,49 @@ const services = [
     icon: Shield,
     name: 'Limpieza y prevención',
     desc: 'Mantén tus dientes sanos y elimina el sarro acumulado antes de que cause problemas.',
-    color: 'from-blue-500/10 to-blue-600/10',
-    accent: 'text-blue-500',
-    border: 'border-blue-200 hover:border-blue-400',
+    color: 'from-[#2A6F97]/10 to-[#1e4d6b]/10',
+    accent: 'text-[#2A6F97]',
+    border: 'border-[#2A6F97]/20 hover:border-[#2A6F97]',
   },
   {
     icon: AlignCenter,
     name: 'Ortodoncia',
     desc: 'Alinea tu sonrisa con opciones discretas y modernas, incluyendo brackets estéticos e invisalign.',
-    color: 'from-blue-500/10 to-blue-700/10',
-    accent: 'text-blue-500',
-    border: 'border-blue-200 hover:border-blue-400',
+    color: 'from-[#2A6F97]/10 to-[#1e4d6b]/10',
+    accent: 'text-[#2A6F97]',
+    border: 'border-[#2A6F97]/20 hover:border-[#2A6F97]',
   },
   {
     icon: Sparkles,
     name: 'Estética dental',
     desc: 'Blanqueamiento, carillas y diseño de sonrisa para una imagen que proyecta confianza.',
-    color: 'from-amber-500/10 to-orange-500/10',
-    accent: 'text-amber-500',
-    border: 'border-amber-200 hover:border-amber-400',
+    color: 'from-[#3EC1D3]/10 to-[#2A6F97]/10',
+    accent: 'text-[#3EC1D3]',
+    border: 'border-[#3EC1D3]/20 hover:border-[#3EC1D3]',
   },
   {
     icon: Layers,
     name: 'Implantes dentales',
     desc: 'Recupera tu sonrisa completa con implantes de titanio de alta calidad, sin dolor y de por vida.',
-    color: 'from-emerald-500/10 to-teal-500/10',
-    accent: 'text-emerald-500',
-    border: 'border-emerald-200 hover:border-emerald-400',
+    color: 'from-[#3EC1D3]/10 to-[#2A6F97]/10',
+    accent: 'text-[#3EC1D3]',
+    border: 'border-[#3EC1D3]/20 hover:border-[#3EC1D3]',
   },
   {
     icon: Wrench,
     name: 'Restauraciones',
     desc: 'Reconstruye dientes dañados con materiales del color de tu diente, sin que nadie lo note.',
-    color: 'from-slate-500/10 to-slate-600/10',
-    accent: 'text-slate-500',
-    border: 'border-slate-200 hover:border-slate-400',
+    color: 'from-gray-200/10 to-gray-300/10',
+    accent: 'text-gray-600',
+    border: 'border-gray-300 hover:border-gray-400',
   },
   {
     icon: Smile,
     name: 'Urgencias dentales',
     desc: 'Atendemos dolores e infecciones el mismo día. No te dejamos esperar cuando hay dolor.',
-    color: 'from-rose-500/10 to-red-500/10',
-    accent: 'text-rose-500',
-    border: 'border-rose-200 hover:border-rose-400',
+    color: 'from-[#3EC1D3]/10 to-[#2A6F97]/10',
+    accent: 'text-[#3EC1D3]',
+    border: 'border-[#3EC1D3]/20 hover:border-[#3EC1D3]',
   },
 ];
 
@@ -57,15 +57,15 @@ export default function ServicesPreview({ navigate }: NavigationProps) {
     <section className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <p className="text-blue-600 text-sm font-semibold tracking-widest uppercase mb-4">
+          <p className="text-[#2A6F97] text-sm font-semibold tracking-widest uppercase mb-4">
             Lo que podemos hacer por ti
           </p>
-          <h2 className="font-display text-4xl lg:text-5xl font-bold text-slate-900 mb-5">
+          <h2 className="font-display text-4xl lg:text-5xl font-bold text-gray-900 mb-5">
             Todos los tratamientos que necesitas
             <br />
             en un solo lugar
           </h2>
-          <p className="text-slate-500 text-lg max-w-xl mx-auto">
+          <p className="text-gray-600 text-lg max-w-xl mx-auto">
             Con explicaciones claras, precios transparentes y un equipo que te acompaña en cada paso.
           </p>
         </div>

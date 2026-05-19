@@ -46,13 +46,13 @@ export default function Footer({ navigate }: NavigationProps) {
           </div>
 
           <div>
-            <h4 className="text-white font-display font-semibold mb-5">Navegación</h4>
+            <h4 className="text-gray-900 font-display font-semibold mb-5">Navegación</h4>
             <ul className="space-y-3">
               {footerLinks.map((link) => (
                 <li key={link.page}>
                   <button
                     onClick={() => navigate(link.page)}
-                    className="text-slate-400 hover:text-blue-400 text-sm transition-colors"
+                    className="text-gray-600 hover:text-[#2A6F97] text-sm transition-colors"
                   >
                     {link.label}
                   </button>
@@ -62,11 +62,11 @@ export default function Footer({ navigate }: NavigationProps) {
           </div>
 
           <div>
-            <h4 className="text-white font-display font-semibold mb-5">Servicios</h4>
-            <ul className="space-y-3 text-sm text-slate-400">
+            <h4 className="text-gray-900 font-display font-semibold mb-5">Servicios</h4>
+            <ul className="space-y-3 text-sm text-gray-600">
               {['Limpieza y Prevención', 'Ortodoncia', 'Estética Dental', 'Implantes Dentales', 'Restauraciones', 'Urgencias'].map(s => (
                 <li key={s}>
-                  <button onClick={() => navigate('servicios')} className="hover:text-blue-400 transition-colors">
+                  <button onClick={() => navigate('servicios')} className="hover:text-[#2A6F97] transition-colors">
                     {s}
                   </button>
                 </li>
@@ -75,22 +75,22 @@ export default function Footer({ navigate }: NavigationProps) {
           </div>
 
           <div>
-            <h4 className="text-white font-display font-semibold mb-5">Contacto</h4>
+            <h4 className="text-gray-900 font-display font-semibold mb-5">Contacto</h4>
             <ul className="space-y-4">
-              <li className="flex items-start gap-3 text-sm text-slate-400">
-                <MapPin size={15} className="text-blue-400 mt-0.5 flex-shrink-0" />
+              <li className="flex items-start gap-3 text-sm text-gray-600">
+                <MapPin size={15} className="text-[#2A6F97] mt-0.5 flex-shrink-0" />
                 <span>Av. Principal 123, Col. Centro<br />Ciudad de México, CDMX</span>
               </li>
-              <li className="flex items-center gap-3 text-sm text-slate-400">
-                <Phone size={15} className="text-blue-400 flex-shrink-0" />
-                <a href="tel:+1234567890" className="hover:text-white transition-colors">(123) 456-7890</a>
+              <li className="flex items-center gap-3 text-sm text-gray-600">
+                <Phone size={15} className="text-[#2A6F97] flex-shrink-0" />
+                <a href="tel:+1234567890" className="hover:text-gray-900 transition-colors">(123) 456-7890</a>
               </li>
-              <li className="flex items-center gap-3 text-sm text-slate-400">
-                <Mail size={15} className="text-blue-400 flex-shrink-0" />
-                <a href="mailto:hola@luminadental.mx" className="hover:text-white transition-colors">hola@luminadental.mx</a>
+              <li className="flex items-center gap-3 text-sm text-gray-600">
+                <Mail size={15} className="text-[#2A6F97] flex-shrink-0" />
+                <a href="mailto:hola@luminadental.mx" className="hover:text-gray-900 transition-colors">hola@luminadental.mx</a>
               </li>
-              <li className="flex items-start gap-3 text-sm text-slate-400">
-                <Clock size={15} className="text-blue-400 mt-0.5 flex-shrink-0" />
+              <li className="flex items-start gap-3 text-sm text-gray-600">
+                <Clock size={15} className="text-[#2A6F97] mt-0.5 flex-shrink-0" />
                 <div>
                   <p>Lun – Vie: 9:00 – 19:00</p>
                   <p>Sáb: 9:00 – 14:00</p>
@@ -111,7 +111,7 @@ export default function Footer({ navigate }: NavigationProps) {
 
         <div className="section-divider my-10" />
 
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-slate-500">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-gray-500">
           <p>© {new Date().getFullYear()} Clínica Dental Lumina. Todos los derechos reservados.</p>
           <p>Hecho con cuidado para tus pacientes.</p>
         </div>
