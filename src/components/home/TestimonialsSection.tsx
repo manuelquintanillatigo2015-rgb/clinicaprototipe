@@ -30,37 +30,37 @@ const testimonials = [
 
 export default function TestimonialsSection({ navigate }: NavigationProps) {
   return (
-    <section className="py-24 bg-slate-50">
+    <section className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <p className="text-blue-600 text-sm font-semibold tracking-widest uppercase mb-4">
+          <p className="text-[#2A6F97] text-sm font-semibold tracking-widest uppercase mb-4">
             Resultados reales
           </p>
-          <h2 className="font-display text-4xl lg:text-5xl font-bold text-slate-900 mb-5">
+          <h2 className="font-display text-4xl lg:text-5xl font-bold text-gray-900 mb-5">
             Pacientes que llegaron con dudas
             <br />
             y volvieron con sonrisas
           </h2>
-          <p className="text-slate-500 text-lg max-w-lg mx-auto">
+          <p className="text-gray-600 text-lg max-w-lg mx-auto">
             Estas no son frases genéricas. Son historias reales de personas que entendemos.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
           {testimonials.map((t) => (
-            <div key={t.name} className="bg-white rounded-2xl p-6 border border-slate-100 hover:border-blue-200 hover:shadow-lg transition-all hover-lift">
+            <div key={t.name} className="bg-white rounded-xl p-6 border border-gray-200 hover:border-[#2A6F97]/30 hover:shadow-md transition-all hover-lift">
               <div className="flex items-center gap-1 mb-4">
                 {[...Array(t.rating)].map((_, i) => (
-                  <Star key={i} size={14} className="fill-amber-400 text-amber-400" />
+                  <Star key={i} size={14} className="fill-[#3EC1D3] text-[#3EC1D3]" />
                 ))}
               </div>
-              <Quote size={24} className="text-blue-100 mb-3" />
-              <p className="text-slate-600 text-sm leading-relaxed mb-5">{t.text}</p>
-              <div className="flex items-center gap-3 pt-4 border-t border-slate-100">
+              <Quote size={24} className="text-[#2A6F97]/10 mb-3" />
+              <p className="text-gray-600 text-sm leading-relaxed mb-5">{t.text}</p>
+              <div className="flex items-center gap-3 pt-4 border-t border-gray-200">
                 <img src={t.avatar} alt={t.name} className="w-10 h-10 rounded-full object-cover" />
                 <div>
-                  <p className="text-slate-800 font-semibold text-sm">{t.name}</p>
-                  <p className="text-blue-600 text-xs">{t.service}</p>
+                  <p className="text-gray-900 font-semibold text-sm">{t.name}</p>
+                  <p className="text-[#2A6F97] text-xs">{t.service}</p>
                 </div>
               </div>
             </div>
@@ -70,7 +70,7 @@ export default function TestimonialsSection({ navigate }: NavigationProps) {
         <div className="text-center">
           <button
             onClick={() => navigate('casos-reales')}
-            className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:text-blue-500 transition-colors"
+            className="inline-flex items-center gap-2 text-[#2A6F97] font-semibold hover:text-[#1e4d6b] transition-colors"
           >
             Ver más casos reales
             <ArrowRight size={16} />

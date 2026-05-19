@@ -25,23 +25,23 @@ const items = [
 
 export default function TrustStrip() {
   return (
-    <section className="bg-white py-16 border-b border-slate-100">
+    <section className="bg-white py-16 border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <p className="text-center text-slate-500 text-sm font-medium mb-10 tracking-widest uppercase">
+        <p className="text-center text-gray-600 text-sm font-medium mb-10 tracking-widest uppercase">
           Tu tranquilidad es parte del tratamiento.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {items.map((item) => (
             <div
               key={item.title}
-              className="flex items-start gap-4 p-5 rounded-2xl border border-slate-100 hover:border-blue-200 hover:bg-blue-50/50 transition-all group"
+              className="flex items-start gap-4 p-5 rounded-xl border border-gray-200 hover:border-[#2A6F97]/30 hover:bg-[#2A6F97]/5 transition-all group"
             >
-              <div className="w-11 h-11 bg-blue-50 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-blue-100 transition-colors">
-                <item.icon size={22} className="text-blue-600" />
+              <div className="w-11 h-11 bg-[#2A6F97]/10 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-[#2A6F97]/20 transition-colors">
+                <item.icon size={22} className="text-[#2A6F97]" />
               </div>
               <div>
-                <h3 className="text-slate-800 font-display font-semibold text-sm mb-1">{item.title}</h3>
-                <p className="text-slate-500 text-sm leading-relaxed">{item.desc}</p>
+                <h3 className="text-gray-900 font-display font-semibold text-sm mb-1">{item.title}</h3>
+                <p className="text-gray-600 text-sm leading-relaxed">{item.desc}</p>
               </div>
             </div>
           ))}
